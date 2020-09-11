@@ -1,0 +1,424 @@
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap');
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:"Noto Sans JP", "sans-serif", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.5;
+  word-break: break-all;
+}
+
+a {
+  color: #7db9e7;
+  text-decoration: none;
+}
+
+/*a:hover {*/
+/*  text-decoration: underline;*/
+/*}*/
+
+a:hover img {
+  text-decoration: none;
+  opacity: 0.8;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+img, video, object {
+  max-width: 100%;
+  height: auto;
+  border: none;
+  vertical-align: bottom;
+  display: block;
+}
+
+#backToTop {
+  position: fixed;
+  z-index: 9999;
+  bottom: 15px;
+  right: 15px;
+}
+
+#backToTop a {
+  display: block;
+  text-decoration: none;
+  color: #F2B705;
+  opacity: 0.7;
+}
+
+#backToTop i {
+  font-size: 4.0rem;
+}
+
+/*--------------------------------
+　全体
+---------------------------------*/
+
+.inner {
+  max-width: 736px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 6px 10px;
+}
+
+/*--------------------------------
+　header
+---------------------------------*/
+
+#header {
+  background-color: #fff;
+}
+
+#header .logo {
+  text-align: center;
+  padding: 0.6em 0 0;
+}
+
+#header .logo a {
+  color: #F2B705;
+  font-size: 1.6rem;
+  text-decoration: none;
+  font-family: 'Cabin Sketch', cursive;
+}
+
+#header .camera {
+  display: inline-block;
+  width: 25px;
+  height: auto;
+  vertical-align: text-top;
+  margin-left: 0.2em;
+}
+
+#header .icon {
+  width: 20px;
+  display: inline-block;
+  padding-bottom: 3px;
+  margin-right: 8px;
+}
+
+#header #top-img {
+ max-width: 736px;
+ padding-top: 100%;
+ margin: 0 auto;
+ text-align: left;
+ position: relative;  
+}
+
+#header #top-img img {
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+} 
+
+/*--------------------------------
+　globalnavi
+---------------------------------*/
+
+.gnav {
+  background-color: #fff;
+  margin-top: 0.5rem;
+}
+
+.gnav .inner a {
+  color: #444;
+  font-size: 0.9em;
+  padding: 0.2em;
+  font-weight: bold;
+}
+
+.gnav .gnav-li {
+  display: inline-block;
+  width: 17px;
+  vertical-align: middle;
+  margin-right: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+.gnav .kiseki-li a {
+ margin-left: 1.0rem;
+ font-weight: normal;
+}
+
+/*--------------------------------
+　section
+---------------------------------*/
+
+.section {
+  background-color: #fff;
+  padding: 10px 0;
+}
+
+.section h4 {
+  margin-top: 0.2em;
+  line-height: 2.0;
+}
+
+.section .diary-item {
+  border-left: 2px dashed #F2B705;
+  margin-left: 1em;
+  position: relative;
+}
+
+.diary-item .train::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 16px;
+  background-image: url(../img/train.png);
+  background-size: contain;
+  position: absolute;
+  bottom: 2.0rem;
+  left: -3%;
+}
+
+.diary-item .foot::before {
+  content: "";
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background-image: url(../img/foot2.png);
+  background-size: contain;
+  position: absolute;
+  bottom: 2.0rem;
+  left: -4%;
+}
+
+.diary-item .bus::before {
+  content: "";
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  background-image: url(../img/bus.png);
+  background-size: contain;
+  position: absolute;
+  bottom: 2.0rem;
+  left: -3%;
+}
+
+.diary-item .bed::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 22px;
+  background-image: url(../img/bed.png);
+  background-size: contain;
+  position: absolute;
+  bottom: 2.0rem;
+  left: -2%;
+}
+
+.diary-item .car::before {
+  content: "";
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  background-image: url(../img/car.png);
+  background-size: contain;
+  position: absolute;
+  bottom: 2.0rem;
+  left: -3%;
+}
+
+.section .diary-img img {
+  box-shadow: 2px 2px 4px grey;
+  width: 89%;
+  margin: 0 auto;
+  margin-bottom: 0.3em;
+}
+
+.section .diary-img .imgsl {
+  width: 43.5%;
+  display: inline-block;
+  margin-left: 5.5%;  
+}
+
+.section .diary-img .imgsr {
+  width: 43.5%;
+  margin-left: 0.5%;   
+  display: inline-block;  
+}
+
+.section .diary-text {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.5em;
+}
+
+.section .text p{
+  line-height: 0.5;
+  margin-top: -0.7em;
+}
+
+.title {
+  background: linear-gradient(transparent 70%, #F2B705 70%); 
+  display: inline;
+  font-size: 1.2em;
+}
+
+#section03 .link-wrp a {
+  color: #444;
+}
+
+#section03 .link-item {
+  display: flex;
+  margin-top: 0.7em;
+  padding: 0.5em;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px lightgray;
+}
+
+#section03 .link-img {
+  width: 30%;
+}
+
+#section03 .link-img img {
+  width: 100%;
+}
+
+#section03 .link-text {
+  width: 70%;
+  padding-left: 0.7em;
+}
+
+#section04 h5 {
+  display: inline;
+  position: relative;
+  padding: 0.5em 0.6em 0.3em 0.6rem;
+  background: #F2DA91;
+  border-radius: 10px;
+}
+
+#section04 h5:after {
+  position: absolute;
+  content: '';
+  top: 98%;
+  left: 15px;
+  border: 8px solid transparent;
+  border-top: 8px solid #F2DA91;
+  width: 0;
+  height: 0;
+}
+
+#section04 .pen {
+  display: inline-block;
+  width: 14px;
+  vertical-align: middle;
+  margin-bottom: 0.3em;
+  margin-left: 0.2em;
+}
+
+#section04 .last-text {
+  padding-top: 0.7rem;
+}
+
+/*--------------------------------
+  Footer
+---------------------------------*/
+
+#footer {
+  background-color: #F2B705;
+}
+
+#footer .inner {
+  padding: 20px 10px;
+}
+
+#footer .footer-link {
+  text-align: center;
+}
+
+#footer .footer-link li {
+  display: inline-block;
+  margin-right: 1.0em;
+}
+
+#footer .footer-link .footer-li {
+  margin-right: 0.15em;
+  display: inline-block;
+  width: 14px;
+  vertical-align: middle;
+  margin-right: 0.3em;
+  margin-bottom: 0.1em;  
+}
+
+#footer .footer-link a {
+  color: #333;
+  font-size: 0.9em;
+}
+
+#footer .copyright {
+  font-size: 12px;
+  text-align: center;
+}
+
+#footer .copyright a {
+  color: #333;
+}
+
+/*--------------------------------
+  Sanbi
+---------------------------------*/
+#sanbi {
+  text-align: center;
+  line-height: 2;
+  padding: 3em 1em;
+}
+
+#sanbi .sanbi-title {
+  background: linear-gradient(transparent 70%, #F2B705 70%);
+  display: inline;
+  font-size: 1.2em;
+}
+
+#sanbi .music {
+  display: inline-block ;
+  width: 32px;
+}
+
+#sanbi .kashi {
+  padding-top: 3.0em;
+}
+
+#sanbi .sanbi-img {
+  box-shadow: 2px 2px 4px darkgrey;
+}
+
+/*media Queries 767
+----------------------------------------------------*/
+@media (min-width: 450px) {
+  
+.diary-item .train::before {
+  left: -1.5%;
+}
+
+.diary-item .foot::before {
+  left: -2.5%;
+}
+
+.diary-item .bus::before {
+  left: -1.5%;
+}
+
+.diary-item .bed::before {
+  left: -1%;
+}
+
+.diary-item .car::before {
+  left: -1.5%;
+}
+
+}
