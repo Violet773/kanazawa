@@ -273,6 +273,16 @@ img, video, object {
   color: #444;
 }
 
+#section03 .link-wrp .minititle {
+  margin-top: 1.0em;
+  font-weight: bold;
+}
+
+#section03 .link-wrp li {
+  line-height: 1.9;
+  font-weight: normal;
+}
+
 #section03 .link-item {
   display: flex;
   margin-top: 0.7em;
